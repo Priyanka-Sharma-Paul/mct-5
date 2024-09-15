@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="password-generator">
+        <h2>Password Generator</h2>
+        
+        <!-- Password Length -->
+        <div class="form-group">
+          <label for="length" class="length-label"><i class="fas fa-arrows-alt-h"></i> Select Password Length (6 - 30 characters):</label>
+          <input type="number" id="length" min="6" max="30" value="8">
+        </div>
+      
+        <!-- Checkbox Options -->
+        <div class="form-group">
+          <input type="checkbox" id="uppercase" checked>
+          <label for="uppercase"><i class="fas fa-text-height"></i> Include Uppercase Letters</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="lowercase" checked>
+          <label for="lowercase"><i class="fas fa-text-width"></i> Include Lowercase Letters</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="numbers">
+          <label for="numbers"><i class="fas fa-hashtag"></i> Include Numbers</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="symbols">
+          <label for="symbols"><i class="fas fa-percent"></i> Include Symbols</label>
+        </div>
+      
+        <!-- Additional Options -->
+        <div class="form-group">
+          <input type="checkbox" id="excludeSimilar">
+          <label for="excludeSimilar"><i class="fas fa-ban"></i> Exclude Similar Characters (e.g., l, 1, O, 0)</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="excludeAmbiguous">
+          <label for="excludeAmbiguous"><i class="fas fa-times-circle"></i> Exclude Ambiguous Characters (e.g., {}, [], (), /, \)</label>
+        </div>
+      
+        <!-- Generate Button -->
+        <button id="generate" class="btn"><i class="fas fa-sync-alt"></i> Generate Password</button>
+      
+        <!-- Generated Password Display -->
+        <div class="password-output">
+          <input type="text" id="password" readonly placeholder="Your generated password">
+          <button id="copy" class="btn copy-btn"><i class="fas fa-copy"></i> Copy</button>
+        </div>
+      </div>
+      
+      <script src="script.js"></script>
+</body>
+</html>
