@@ -210,7 +210,7 @@ export const projects = [
     image: PortfolioImg,
     tags: ["React", "HTML", "CSS"],
     category: "web app",
-    github: "https://github.com/Priyanka-Sharma-Paul/mct-5/portfolio",
-    webapp: "https://mct-5-priyanks-protfolio.vercel.app/",
+    github: "https://github.com/Priyanka-Sharma-Paul/mct-5/tree/master/portfolio",
+    webapp: "https://mct-5-priyanka-protfolio.vercel.app/",
   },
 ];
