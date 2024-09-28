@@ -1,0 +1,30 @@
+.quoteContainer {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  background-color: #eeede8;
+  color: #0c0101;
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  width: 80%;
+
+}
+
+.author {
+  margin-top: 20px;
+  font-size: 1em;
+  font-style: italic;
+  color: #07376b;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
